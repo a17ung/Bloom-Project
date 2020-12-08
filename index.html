@@ -4,76 +4,97 @@
 <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="style.css" />
-    <title>looking for a new activity in quarantine?</title>
+    <title>embroidery!</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;400&family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;400&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
 </head>
-<body id="top">
-    <svg height="50" width="50">
-        <circle cx="25" cy="25" r="20" stroke="black" stroke-width="3" fill="black" />
-    </svg>
-    <div id="buttons">
-        <button id="learnbut">learn</button>
-        <button id="connectbut">connect</button>
-        <button id="createbut">create</button>
-        <button id="joinbut">join</button>
+
+<body>
+    <section id="top">
+
+    <div class="container-left">
+        <img id="top-hoop" src="img/top-hoop.svg" alt="embroidery hoop">        
     </div>
 
-    <div class="rectangle">
-        <div class="line1"></div>
-        <div class="line2"></div>
+    <div class="button-container container-right" id="top-btn-ctr">
+        <button onclick="directToLearn()" id="learn-btn" class="top-btn">learn</button>
+        <button onclick="directToConnect()" id="connect-btn" class="top-btn">connect</button>
+        <button onclick="directToStart()" id="create-btn" class="top-btn">create</button>
+        <button onclick="directToJoin()" id="join-btn" class="top-btn">join</button>
+    </div>
+</section>
+
+    <img src="img/hello.svg" alt="hello in cursive">
+
+    <div id="header">
+        <h1 class="text-center">looking for a new activity in quarantine?</h1>
     </div>
 
-    <h1>looking for a new activity in quarantine?</h1>
+    <section id="learn-section">
+        
+    <img id="t-1" src="img/thread-1.svg" alt="thread"/>
 
 
-    <div class="box" id="getinspired">
-        <svg height="310" width="310">
-            <circle cx="155" cy="155" r="150" stroke="black" stroke-width="1" fill="white" />
-        </svg>
-        <div class="text" >
-            <h2 class="heading">get <i>inspired</i></h2>
-            <h5>view completed creations, in-progress projects, and new techniques & materials</h5>
-        </div>
+    <div class="mid-container container-right">
+        <h2>get <i>inspired</i></h2>
+        <p class="min-space text-center"> view completed creations, in-progress projects, and new techniques and materials</p>
+
+    </div>
+     <img id="e-1" src="img/mid-hoop-1.svg" alt="hoop"/>   
+    </section>
+
+
+    <img id="t-2" src="img/thread-2.svg" alt="thread"/>  
+    <div id="connect" class="mid-container mid-container-rev">
+        <section id="connect-section"> <h2><i>connect</i> with others</h2></section>
+            <p class="min-space text-center"> talk with embroiders of all skill levels about everything from thread organizations to patterns</p>
+    </div>     
+    <img id="e-2" src="img/mid-hoop-2.svg" alt="hoop"/>
+    <img id="t-3" src="img/thread-3.svg" alt="thread"/>
+    
+
+
+    <img id="e-3" src="img/mid-hoop-3.svg" alt="hoop"/>
+    <img id="t-4" src="img/thread-4.svg" alt="thread"/>   
+
+    
+    <div id="start" class="mid-container container-right">
+       <section id="create-section"> <h2>start <i>stitching!</i></h2>  </section> 
+        <p class="min-space text-center"> follow the beginner's guide and get started! <br> all you need is a hoop, needle, fabric, and floss :)</p>
+    </div>
+    
+
+
+    <img id="bot-hoop-1" src="img/bot-hoop-1.svg" alt="hoop"/>
+    <img id="bot-hoop-2" src="img/bot-hoop-2.svg" alt="hoop"/>
+
+
+    <section id="join-section">
+    <div id="join" class="mid-container mid-container-rev">
+        <h2 id="join-h2">join the community at</h2>
+        <h1 class="min-space">r/embroidery</h1>
     </div>
 
-    <div class="box" id="connectwithothers">
-        <div class="text">
-            <h2 class="heading"><i>connect</i> with others</h2>
-            <h5>talk with embroiders of all skill levels about everything from thread organizations to patterns</h5>
-        </div>
-        <svg height="310" width="310">
-            <circle cx="155" cy="155" r="150" stroke="black" stroke-width="1" fill="white" />
-        </svg>
+    <div class="button-container">
+        <button onclick="directToReddit()" id="take-btn"> take me there </button>
+        <button onclick="directToTop()" id="scroll-btn"> back to the top </button>
+
+    </div>
+    </section>
+
+    <img id="v-17" src="img/needle-thread/Vector 17.svg" alt="thread"/>
+    <img id="v-13" src="img/needle-thread/Vector 13.svg" alt="needle"/>
+    <img id="e-10" src="img/needle-thread/Ellipse 10.svg" alt="needle"/>
+    <img id="v-16" src="img/needle-thread/Vector 16.svg" alt="thread"/> 
+
+    <div id="bot-h2" class="container-right"> 
+        <h3>Embroiderers do it in the hoop!</h3> 
     </div>
 
-    <div class="box" id="startstitching">
-        <svg height="310" width="310">
-            <circle cx="155" cy="155" r="150" stroke="black" stroke-width="1" fill="white" />
-        </svg>
-        <div class="text">
-            <h2 class="heading">start <i>stitching</i></h2>
-            <h5>follow the beginner's guide, and get started! all you need is a hoop, a needle, fabric, and floss</h5>
-        </div>
-    </div>
+  <script src="script.js"></script>
 
-
-    <div id="joincomm">
-        <svg height="800" width="600">
-            <circle cx="200" cy="700" r="300" stroke="black" stroke-width="2" fill="white" />
-        </svg>
-        <div>
-            <h3>join the community at</h3>
-            <h1>r/Embroidery</h1>
-            <div id="buttons">
-                <button id="takemebut">take me there</button>
-                <button id="starttopbut">start from the top</button>
-            </div>
-        </div>
-        <svg height="610" width="400">
-            <circle cx="305" cy="305" r="300" stroke="black" stroke-width="2" fill="white" />
-        </svg>
-    </div>
-
-    <h3>Embroiderers do it in the hoop!</h3>
-    <script src="script.js"></script>
 </body>
 </html>
