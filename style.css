@@ -104,17 +104,17 @@ button{
 }
 
 #take-btn:hover{
-    border: 2px solid black;
-    color: black;
+    border: 2px solid #222222;
+    color:#222222;
 }
 
 #scroll-btn{
-    border: 2px solid black;
+    border: 2px solid #222222;
     background: white;
     height: 80px;
     width: 313px;
     border-radius: 10px;
-    color: black;
+    color: #222222;
     margin-top: 80px;
     font-size: 28px;
     font-family: 'Heebo', sans-serif;
@@ -133,6 +133,7 @@ h1 {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     line-height: 135%;
+    color: #222222
 }
 
 h2 {
@@ -148,6 +149,7 @@ h3 {
     font-family: 'Heebo', sans-serif;
     font-weight: 100;
     line-height: 135%;
+    color: #222222;
 }
 
 p{
@@ -183,8 +185,8 @@ p{
     margin-left: 200px;
 }
 
-#join-h2{
-    margin-left: -40px;
+.move-left{
+    margin-left: -55px;
 }
 
 #bot-h2{
@@ -273,9 +275,10 @@ p{
 #bot-hoop-2{
     position: absolute;
     left: 0px;
-    top: 3560px;
+    top: 3590px;
 }
 
+/*
 #m-h1{
     position: absolute;
     left: 148px;
@@ -323,3 +326,8 @@ p{
     left: 191px;
     top: 1352px;
 }
+
+@media only screen and (max-width: 400px) {
+    display:  
+}
+*/
